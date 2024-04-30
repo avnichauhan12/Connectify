@@ -9,16 +9,17 @@
 <body>
     <div class="login-container">
         <h2>Login</h2>
-        <form id="login-form">
+        <form id="login-form" method='post' action="/login">
             <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
+                <label for="username">Email</label>
+                <input type="text" id="email" name="email" autocomplete="email">
             </div>
             <div class="input-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" name="password" autocomplete="current-password">
             </div>
             <button type="submit">Login</button>
+            <p>Not an account? <a href="/registration">Register</a></p>
         </form>
     </div>
 </body>

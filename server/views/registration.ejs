@@ -9,23 +9,25 @@
 <body>
     <div class="registration-container">
         <h2>User Registration</h2>
-        <form id="registration-form" method="POST" action="/register">
+        <form id="registration-form" method='post' action="/registration">
             <div class="input-group">
                 <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
+                <input type="text" id="username" name="username">
             </div>
             <div class="input-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email">
             </div>
             <div class="input-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" name="password">
             </div>
             <button type="submit">Register</button>
             <p>Have an account? <a href="/login">Login</a></p>
         </form>
     </div>
-    <script src="registration.js"></script>
+
+        
+   
 </body>
 </html>
